@@ -1,0 +1,115 @@
+/* This is the CSS page for the Maxim Fitness Pre-Workout Survey HTML page. */
+/* Author: Benjamin Leach */
+
+body
+{
+	background-color: #eaebed; /* light grey */
+}
+
+/* Preworkout survey questions class */
+.questions
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12.0pt;
+
+	text-align: center;
+}
+
+/* CSS for a div for all the inputs for each of the questions */
+.inputs_div
+{
+	background-color: white;
+
+	/* the following three lines will center the div */
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+
+}
+
+.inputs_div button 
+{
+	/* same font as questions */
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+
+	color: black; /* black text */	
+	background-color: white; /* white background */
+
+	border: 1px solid black; /* black border */
+
+	cursor: pointer; /* pointer/hand icon */
+
+	/* add padding */
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	float: left;
+
+	/* set width */
+	width: 100px;
+}
+
+/* a class just for buttons so the buttons can be highlighted */
+.buttons:hover
+{
+	background-color: yellow;
+}
+/* --------------------------------------------------- */
+/* ID for the 1st - 5th button in each row of buttons */
+/* --------------------------------------------------- */
+
+/********************************/
+/*     BUTTONS FOR QUESTIONS    */
+/********************************/
+#button1_1, #button1_2, #button1_3, #button1_4, #button1_5
+{
+	color: red;
+	border-right: 0px; /* remove right border */
+	
+	/* round borders of buttons on end */
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#button2_1, #button2_2, #button2_3, #button2_4, #button2_5
+{
+	color: red;
+	border-left: 0px; /* remove left border */
+	border-right: 0px; /* remove right border */
+}
+
+#button3_1, #button3_2, #button3_3, #button3_4, #button3_5
+{
+	color: orange;
+	border-left: 0px; /* remove left border */
+	border-right: 0px; /* remove right border */
+}
+
+#button4_1, #button4_2, #button4_3, #button4_4, #button4_5
+{
+	color: green;
+	border-left: 0px; /* remove left border */
+	border-right: 0px; /* remove right border */
+}
+
+#button5_1, #button5_2, #button5_3, #button5_4, #button5_5
+{
+	color: green;
+	border-left: 0px; /* remove left border */
+
+	/* round borders of buttons on end */
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* Complete button */
+#complete_button
+{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	background-color: black;
+	height: 40px;
+	width: 100%;
+}
